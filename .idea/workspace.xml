@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95266979-4798-4e80-bf48-93c721796226" name="Changes" comment="Divisist proyecto, migracion base de datos" />
+    <list default="true" id="95266979-4798-4e80-bf48-93c721796226" name="Changes" comment="Divisist proyecto, migracion base de datos push">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +22,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "pealmoor"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/pealmoor/DivisistWeb.git",
@@ -68,11 +76,29 @@
       <option name="project" value="LOCAL" />
       <updated>1728496561704</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Divisist proyecto, migracion base de datos pt1">
+      <option name="closed" value="true" />
+      <created>1728496607832</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728496607832</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Divisist proyecto, migracion base de datos push">
+      <option name="closed" value="true" />
+      <created>1728496668293</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728496668293</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Divisist proyecto, migracion base de datos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Divisist proyecto, migracion base de datos" />
+    <MESSAGE value="Divisist proyecto, migracion base de datos pt1" />
+    <MESSAGE value="Divisist proyecto, migracion base de datos push" />
+    <option name="LAST_COMMIT_MESSAGE" value="Divisist proyecto, migracion base de datos push" />
   </component>
 </project>
