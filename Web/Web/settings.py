@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'horario',
     'estudiante',
+    'profesor'
 ]
 
 MIDDLEWARE = [

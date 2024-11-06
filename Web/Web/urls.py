@@ -20,7 +20,9 @@ from django.contrib import admin
 from django.urls import path, include  
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+   
+    path('autenticacion/', include('auth_app.urls')),
     path('horario/', include('horario.urls')),
-    path('estudiante/', include('estudiante.urls')),        # Rutas para la app horario
+    path('estudiante/', include('estudiante.urls')), 
+    path('profesor/', include('profesor.urls')),       # Rutas para la app horario
 ]
