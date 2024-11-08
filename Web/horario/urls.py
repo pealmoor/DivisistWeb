@@ -2,7 +2,7 @@
 
 from django.urls import path
 from .views import horario_list
-from .views import horario_detail # Asegúrate de tener esto
+from .views import horario_detail 
 
 urlpatterns = [
     path('', horario_list, name='horario_list'),  # Lista de horarios

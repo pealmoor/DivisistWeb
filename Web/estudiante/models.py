@@ -18,4 +18,4 @@ class Estudiante(models.Model):
   
 
     class Meta:
-        db_table = 'estudiante'  # Asegúrate de que este nombre sea correcto
+        db_table = 'estudiante'  

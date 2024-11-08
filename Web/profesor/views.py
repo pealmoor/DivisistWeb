@@ -9,7 +9,7 @@ from .services import (
     update_profesor,
     delete_profesor
 )
-from .serializers import ProfesorSerializer  # Asegúrate de importar también el serializador
+from .serializers import ProfesorSerializer  
 
 @api_view(['GET', 'POST'])
 def profesor_list(request):
