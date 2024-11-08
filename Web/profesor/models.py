@@ -11,3 +11,7 @@ class Profesor(models.Model):
 
 class Meta:
         db_table = 'profesor'   
+
+def __str__(self):
+      
+    return f"{self.nombres} {self.primerapellido} {self.segundoapellido or ''}".strip()

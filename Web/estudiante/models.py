@@ -19,3 +19,8 @@ class Estudiante(models.Model):
 
     class Meta:
         db_table = 'estudiante'  
+    
+    
+    def __str__(self):
+        # Esto hará que Django admin muestre el nombre completo del estudiante
+        return f"{self.nombres} {self.primerapellido} {self.segundoapellido or ''}".strip()
