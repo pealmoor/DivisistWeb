@@ -21,7 +21,11 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f5f5f5;
+    background-color: #b60fc5;
+    background-image: url("{% static 'images/logoufps.png' %}");
+    background-size: cover;  /* Ajusta la imagen para cubrir todo el área, manteniendo la proporción */
+    background-position: center center;  /* Centra la imagen */
+    background-attachment: fixed;  /* Hace que la imagen se quede fija al hacer scroll */
 }
 
 .login-container {
@@ -31,11 +35,18 @@ body {
 }
 
 .login-box {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+}
+.login-image img {
+    width: 100%;  /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 200px; /* Ajusta la altura máxima de la imagen para que no sea tan grande */
+    object-fit: cover;  /* Hace que la imagen se recorte de manera uniforme, si es necesario */
+    border-radius: 10px;  /* Opcional: redondear las esquinas de la imagen */
 }
 
 h2 {
