@@ -21,7 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #b60fc5;
+    background-color: #EFDDC5;
     background-image: url("{% static 'images/logoufps.png' %}");
     background-size: cover;  /* Ajusta la imagen para cubrir todo el área, manteniendo la proporción */
     background-position: center center;  /* Centra la imagen */
