@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #EFDDC5;
+    color: black;
+    padding: 20px;
+    grid-row: 1 / span 2;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.sidebar ul li.bottom {
+    margin-top: auto;
+    color: red;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    grid-column: 2 / 3;
+}
+
+.header .login-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.header .user-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.schedule {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.schedule th, .schedule td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.schedule th {
+    background-color: #EFDDC5;
+}
