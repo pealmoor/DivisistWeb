@@ -160,6 +160,9 @@ SOCIALACCOUNT_PROVIDERS = {
     }
 }
 SITE_ID = 2
+GOOGLE_REDIRECT_URI = 'http://127.0.0.1:8000/auth_app/templates/auth_app/login/google/callback/'
 
-LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = 'http://127.0.0.1:5500/Web/templates/index.html'
+LOGOUT_REDIRECT_URL = 'http://127.0.0.1:8000/'
+
+

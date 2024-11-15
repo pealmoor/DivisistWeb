@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
+    
     <div class="login-image">
         <img src="{% static 'images/logoufps.png' %}" alt="Login Banner">
     </div>
@@ -25,9 +26,20 @@
                 </div>
                 <button type="submit" class="login-btn">Iniciar sesión</button>
             </form>
-            <div class="google-login">
-                <a href="#" class="google-btn">Iniciar sesión con Google</a>
-            </div>
+            <script src="https://accounts.google.com/gsi/client" async></script>
+    <div id="g_id_onload"
+        data-client_id='901308746116-1cmqfdrrct5h85it7l0sddh3u21db24u.apps.googleusercontent.com'
+        data-login_uri="https://your.domain/your_login_endpoint"
+        data-auto_prompt="false">
+    </div>
+    <div class="g_id_signin"
+        data-type="standard"
+        data-size="large"
+        data-theme="outline"
+        data-text="sign_in_with"
+        data-shape="rectangular"
+        data-logo_alignment="left">
+    </div>
             <div class="admin-login">
                 <a href="http://127.0.0.1:8000/admin/" class="admin-btn">Admin</a>
             </div>
