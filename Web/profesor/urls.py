@@ -5,6 +5,7 @@ from .views import profesor_detail
 
 urlpatterns = [
     path('', profesor_list, name='profesor_list'),
-    path('<int:pk>/', profesor_detail, name='profesor-detail'),   
+    path('<int:pk>/', profesor_detail, name='profesor-detail'),
+       
     
 ]

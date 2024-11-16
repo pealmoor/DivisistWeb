@@ -1,10 +1,9 @@
-# horario/urls.py
-
 from django.urls import path
-from .views import horario_list
-from .views import horario_detail 
+from .views import HorarioList, HorariosPorEstudiante
+from . import views
 
 urlpatterns = [
-    path('', horario_list, name='horario_list'),  # Lista de horarios
-    path('<int:pk>/', horario_detail, name='estudiante-detail'),
+    path('api/horarios/', HorarioList.as_view(), name='horario-list'),  # Todos los horarios
+    path('api/horarios/<int:estudiante_id>/', HorariosPorEstudiante.as_view(), name='horarios-por-estudiante'), 
+    path('horario/', views.horario_view, name='horario'), # Horarios de un estudiante
 ]

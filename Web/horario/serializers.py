@@ -1,17 +1,10 @@
-# horarios/serializers.py
-
+# serializers.py
 from rest_framework import serializers
-from .models import Horario, Nota
-
+from .models import Horario
 
 class HorarioSerializer(serializers.ModelSerializer):
+    estudiante = serializers.StringRelatedField()  # Muestra el nombre completo del estudiante
+
     class Meta:
         model = Horario
-        fields = ['id', 'materia', 'fecha', 'salon']
-
-class NotaSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Nota
-        fields = ['id', 'nota']
-
-
+        fields = ['estudiante', 'materia', 'salon', 'dia', 'hora_inicio', 'hora_fin']

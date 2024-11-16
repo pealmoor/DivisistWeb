@@ -39,8 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'auth_app.apps.AuthAppConfig',
+    'django.contrib.staticfiles',  
     'django.contrib.sites',
     'allauth',
     'allauth.account',
@@ -49,7 +48,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'horario',
     'estudiante',
-    'profesor'
+    'profesor',
+    'auth_app',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -68,8 +69,8 @@ ROOT_URLCONF = 'Web.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')], 
-        'APP_DIRS': True,
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],  # Directorio global de templates
+        'APP_DIRS': True, 
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -149,20 +150,17 @@ AUTHENTICATION_BACKENDS = [
 
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
-        'SCOPE' : [
-            'profile',
-            'email',
-        ],
-        'AUTH_PARAMS': {
-            'access_type':'online',
-        },
-        'OAUTH_PKCE_ENABLED':True,
+        'SCOPE': ['profile', 'email'],
+        'AUTH_PARAMS': {'access_type': 'online'},
+        'OAUTH_PKCE_ENABLED': True,
     }
 }
-SITE_ID = 2
+SITE_ID = 1
 GOOGLE_REDIRECT_URI = 'http://127.0.0.1:8000/auth_app/templates/auth_app/login/google/callback/'
 
-LOGIN_REDIRECT_URL = 'http://127.0.0.1:5500/Web/templates/index.html'
+LOGIN_REDIRECT_URL = '/index/'
 LOGOUT_REDIRECT_URL = 'http://127.0.0.1:8000/'
 
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '901308746116-1cmqfdrrct5h85it7l0sddh3u21db24u.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
 
