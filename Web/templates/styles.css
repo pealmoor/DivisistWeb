@@ -33,12 +33,14 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    text-align: center; /* Centrado del texto en el sidebar */
 }
 
 .sidebar h2 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
+    text-align: center; /* Centrado del encabezado */
 }
 
 .sidebar ul {
@@ -76,10 +78,11 @@ body {
     background-color: #d0021b;
     color: white;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between; /* Asegura que el contenido se distribuya de forma equitativa */
     align-items: center;
     padding: 0 20px;
     position: relative;
+    text-align: center; /* Centrado de elementos en el header */
 }
 
 .user-menu {
@@ -92,6 +95,8 @@ body {
     height: 40px;
     border-radius: 50%;
     border: 2px solid white;
+    margin-left: auto; /* Para que el avatar se posicione a la derecha */
+    margin-right: auto; /* Para que el avatar se centre */
 }
 
 .user-dropdown {
@@ -128,6 +133,7 @@ body {
     background-color: #f9f9f9;
     color: #333;
     overflow-y: auto;
+    text-align: center; /* Centrado del contenido en la sección principal */
 }
 
 .main-content h2 {
@@ -135,6 +141,7 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
     color: #000;
+    text-align: center; /* Centrado del título */
 }
 
 .schedule {
@@ -171,6 +178,7 @@ body {
     font-weight: bold;
     border-radius: 5px;
     padding: 12px;
+    text-align: center; /* Centrado del texto en el enlace */
 }
 
 .sidebar ul li a.active:hover {
@@ -221,6 +229,110 @@ button:hover {
     .user-menu {
         margin-top: 10px;
     }
+}
+
+.hidden {
+    display: none;
+}
+
+/* Tarjetas */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centrado de las tarjetas */
+    margin-top: 20px; /* Añadir espacio superior */
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center; /* Centrado de la tarjeta */
+    align-items: center; /* Centrado de la tarjeta */
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    display: flex; /* Esto asegura que el contenido dentro de la tarjeta se centre */
+    justify-content: center;
+    align-items: center;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Permite que el contenido esté en columnas */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Evita que el contenido se salga */
+}
+
+.card-front {
+    background-color: #d0021b;
+    color: white;
+}
+
+.card-back {
+    background-color: #f4f4f4;
+    color: #333;
+    transform: rotateY(180deg);
+    font-size: 14px; /* Ajusta el tamaño de la fuente */
+    line-height: 1.4; /* Mejora la legibilidad */
+}
+
+/* Asegurar que el texto dentro de las tarjetas no desborde */
+.card-back p {
+    margin: 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal; /* Permitir que el texto ocupe múltiples líneas */
+}
+
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+.note-input {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.dropdown-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu p {
+    margin: 5px 0;
 }
 
 .hidden {

@@ -158,9 +158,10 @@ SOCIALACCOUNT_PROVIDERS = {
 SITE_ID = 1
 GOOGLE_REDIRECT_URI = 'http://127.0.0.1:8000/auth_app/templates/auth_app/login/google/callback/'
 
-LOGIN_REDIRECT_URL = '/index/'
+LOGIN_REDIRECT_URL = 'auth_app/templates/index.html'
 LOGOUT_REDIRECT_URL = 'http://127.0.0.1:8000/'
 
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '901308746116-1cmqfdrrct5h85it7l0sddh3u21db24u.apps.googleusercontent.com'
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
+AUTH_USER_MODEL = 'auth_app.Usuario'
 

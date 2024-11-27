@@ -20,10 +20,10 @@ from django.contrib import admin
 from django.urls import path, include  
 
 urlpatterns = [
-    
+
+    path('admin/', admin.site.urls),
     path('', include('auth_app.urls')),
-    path('accounts/', include('allauth.urls')),
-    path('', include('horario.urls')),
+    path('horario', include('horario.urls')),
     path('estudiante/', include('estudiante.urls')), 
     path('profesor/', include('profesor.urls')), 
           
